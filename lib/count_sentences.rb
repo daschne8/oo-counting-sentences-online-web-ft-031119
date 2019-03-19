@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    return self.end_with?(".")
+    self.end_with?(".")
   end
 
   def question?
@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split(/[!?.]/)
+    self.split(/[!?.]/).length
   end
 end
